@@ -1,9 +1,9 @@
 class IsSubsequence:
 
-    def isSubsequence(self, s: str, t: str) -> str:
+    def isSubsequence(self, s: str, t: str) -> bool:
         l = 0
-        for r in range(len(t)):
-            if l < len(s) and s[l] == t[r]:
+        for i in range(len(t)):
+            if l < len(s) and s[l] == t[i]:
                 l += 1
         return l == len(s)
 
@@ -11,6 +11,5 @@ class IsSubsequence:
 if __name__ == "__main__":
     s = "abc"
     t = "ahbgdc"
-    # expected output: true
-    print(IsSubsequence().isSubsequence(s, t))
-    
+    # Expected Output: true
+    print(IsSubsequence().isSubsequence(s=s, t=t))

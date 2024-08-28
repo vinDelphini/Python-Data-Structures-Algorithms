@@ -104,4 +104,20 @@ async def main():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-asyncio.run(main())
+# asyncio.run(main())
+
+
+# Flatten a list
+nested_list = [3, [1, 2, 4], [5, [6, 7], 8], 9, [10, [11, [12, 13], 14], 15], 16, [17, 18], 19, [20]]
+print(nested_list)
+
+nested_list_rev = list(reversed(nested_list))
+out = []
+while nested_list_rev:
+    stack = nested_list_rev.pop()
+    if isinstance(stack, list):
+        nested_list_rev.extend(reversed(stack))
+    else:
+        out.append(stack)
+
+print(out)

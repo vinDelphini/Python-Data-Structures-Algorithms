@@ -1,12 +1,10 @@
-class ReverseStrings:
+class ReverseWord:
 
-    def reverseString(self, str:str) -> str:
-        return " ".join(reversed(str.strip().split()))
-
-
+    def reverseWords(self, s: str) -> str:
+        return " ".join(list(reversed(s.strip().split())))
 
 if __name__ == "__main__":
     s = "the sky is blue"
-    # expected output: "blue is sky the"
-    print(ReverseStrings().reverseString(s))
+    # Expected Output: "blue is sky the"
+    print(ReverseWord().reverseWords(s=s))
     

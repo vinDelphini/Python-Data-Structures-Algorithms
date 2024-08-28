@@ -46,13 +46,14 @@ class BinarySearchTree:
         return False
 
 
-new_tree = BinarySearchTree(47)
-new_tree.insert(21)
-new_tree.insert(76)
-new_tree.insert(18)
-new_tree.insert(27)
-new_tree.insert(52)
-new_tree.insert(82)
+if __name__ == "__main__":
+    new_tree = BinarySearchTree(47)
+    new_tree.insert(21)
+    new_tree.insert(76)
+    new_tree.insert(18)
+    new_tree.insert(27)
+    new_tree.insert(52)
+    new_tree.insert(82)
 
-print(new_tree.contains(27))
-print(new_tree.contains(17))
+    print(new_tree.contains(27))
+    print(new_tree.contains(17))

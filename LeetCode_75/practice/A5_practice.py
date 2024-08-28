@@ -1,22 +1,24 @@
 class ReverseVowels:
 
-    def reverseVowels(self, str: str) -> str:
-        str = list(str)
-        l, r = 0, len(s) - 1
+    def reverseVowels(self, s: str) -> str:
+        s = list(s)
         vowels = set('aeiouAEIOU')
+        
+        l, r = 0, len(s) - 1
+        
         while l < r:
-            if str[l] not in vowels:
+            if s[l] not in vowels:
                 l += 1
-            elif str[r] not in vowels:
+            elif s[r] not in vowels:
                 r -= 1
             else:
-                str[l], str[r] = str[r], str[l]
+                s[l], s[r] = s[r], s[l]
                 l += 1
                 r -= 1
-        return "".join(str)
+        return "".join(s)
 
 
 if __name__ == "__main__":
     s = "hello"
-    # expected output: "holle"
-    print(ReverseVowels().reverseVowels(str=s))
+    # Expected Output: "holle"
+    print(ReverseVowels().reverseVowels(s=s))
