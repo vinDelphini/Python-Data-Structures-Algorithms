@@ -1,14 +1,12 @@
 from itertools import zip_longest
 
-class MergeStrings:
+class mergeAlternateStr:
 
-    def mergeStringsAlternatively(self, word1: str, word2: str) -> str:
-        return ''.join(w1 + w2 for w1, w2 in zip_longest(word1, word2, fillvalue=''))
-
+    def mergeStrings(self, word1: str, word2: str) -> str:
+        return "".join(w1 + w2 for w1, w2 in zip_longest(word1, word2, fillvalue=""))
 
 if __name__ == "__main__":
     word1 = "abc"
     word2 = "pqr"
     # Expected Output: "apbqcr"
-    print(MergeStrings().mergeStringsAlternatively(word1=word1, word2=word2))
-    
+    print(mergeAlternateStr().mergeStrings(word1=word1, word2=word2))

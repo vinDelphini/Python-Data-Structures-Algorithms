@@ -1,21 +1,26 @@
 from typing import List
-class KSumPairs:
 
-    def kSumPairs(self, nums: List[int], k:int) -> int:
+class MaxKSumPairs:
+    
+    def kSumPairs(self, nums: List[int], k: int) -> int:
         l, r = 0, len(nums) - 1
-        count = 0
+        no_of_pairs = 0
         while l < r:
-            if nums[l] + nums[r] == k:
+            current_sum = nums[l] + nums[r]
+            if current_sum == k:
+                no_of_pairs += 1
                 l += 1
                 r -= 1
-                count += 1
+            elif current_sum < k:
+                l += 1
             else:
                 r -= 1
-        return count
+        return no_of_pairs
 
 
 if __name__ == "__main__":
     nums = [1,2,3,4]
     k = 5
     # Expected Output: 2
-    print(KSumPairs().kSumPairs(nums=nums, k=k))
+    print(MaxKSumPairs().kSumPairs(nums=nums, k=k))
+    
