@@ -1,9 +1,9 @@
 from typing import List
 
 
-class PrefixSum:
+class PivotIndex:
 
-    def prefixSum(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums: List[int]) -> int:
 
         total = sum(nums)
 
@@ -21,4 +21,4 @@ class PrefixSum:
 if __name__ == "__main__":
     nums = [1,7,3,6,5,6]
     # Expected Output: 3
-    print(PrefixSum().prefixSum(nums=nums))
+    print(PivotIndex().pivotIndex(nums=nums))

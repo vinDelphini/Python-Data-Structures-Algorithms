@@ -19,8 +19,8 @@ class MaxKSumPairs:
 
 
 if __name__ == "__main__":
-    nums = [1,2,3,4]
-    k = 5
-    # Expected Output: 2
+    nums = [3,1,3,4,3]
+    k = 6
+
+    # Expected Output: 1
     print(MaxKSumPairs().kSumPairs(nums=nums, k=k))
-    
