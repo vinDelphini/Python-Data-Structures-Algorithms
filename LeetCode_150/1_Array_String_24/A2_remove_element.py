@@ -1,18 +1,18 @@
-from typing import List, Tuple
+from typing import List
 
-class RemoveElements:
+class RemoveElement:
+    
+    def removeElement(self, nums: List[int], val: int) -> int:
+        index = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[index] = nums[i]
+                index += 1
+        return index
 
-    def removeElements(self, nums: List[int], val: int) -> Tuple[int, List[int]]:
-        
-        for i in nums:
-            if i == val:
-                nums.remove(i)
-                nums.append("_")
-        return nums
 
 if __name__ == "__main__":
-
     nums = [0,1,2,2,3,0,4,2]
     val = 2
-    # Output: 5, nums = [0,1,4,0,3,_,_,_]
-    print(RemoveElements().removeElements(nums, val))
+    # Expected Output: 1, nums = [2]
+    print(RemoveElement().removeElement(nums=nums, val=val))
