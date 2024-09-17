@@ -3,7 +3,7 @@ class KidsWithCandies:
 
     def greatestNumberCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         maxCandy = max(candies)
-        return [candy + extraCandies >= maxCandy for candy in candies]
+        return [extraCandies + candy >= maxCandy for candy in candies]
 
 
 if __name__ == "__main__":

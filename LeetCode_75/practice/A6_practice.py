@@ -1,7 +1,7 @@
 class ReverseWordsString:
 
     def reverseWordsString(self, s: str) -> str:
-        return ' '.join(reversed((s).strip().split()))
+        return " ".join(reversed(s.strip().split()))
 
 
 if __name__ == "__main__":
