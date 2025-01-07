@@ -121,3 +121,33 @@ while nested_list_rev:
         out.append(stack)
 
 print(out)
+
+# Python Developer Theory Questions
+# 1. What is the difference between a Python module and a package? 
+# 2. What is purpose of Single underscore variable on Python? 
+# 3. What is the difference between static and class methods?
+# 4. Why are the full values shared between 2 objects or more objects?
+# 5. What is a MRO on python and how does it works?
+# 6. Describe the understanding about the python garbage collection.
+# 7. What should we do to help garbage collection?
+# 8. What do you understand about the global interpreter lock?
+# 9. Why use else and try catch on python?
+# 10. Why is it all memory freed when python exits?
+
+# 11. How python is interpreted
+# 12. why finalize is used in python
+# 13. iterators in python
+
+# 14. Generators in python
+# 15. can we use 2 generators at same time?
+# 16. Difference between return and yeild function in generators
+# 17. Meta classes in python
+# 18. Can we use decorators in python
+# 19. What is monkey patching in python and its uses
+# 20. What is difference between shallow and deep copy
+# 21. Define polymorphism in python
+# 22. xrange and range in python
+# 23. What is the purpose of python non-local statement
+# 24. How to use with in python
+# 25. How does python approach multi threading.
+# 26. Is it a good idea to use multi thread to speed up python code
