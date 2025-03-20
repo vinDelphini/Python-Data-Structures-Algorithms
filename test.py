@@ -1,9 +1,7 @@
-ls = [1, 2, 3, 4, 5]
+nested_list = [3, [1, 2, 4], [5, [6, 7], 8], 9, [10, [11, [12, 13], 14], 15], 16, [17, 18], 19, [20]]
+nested_list_reversed = list(reversed(nested_list))
+print(nested_list_reversed)
 
-for i in ls:
-    if i == 2:
-        ls.remove(2)
-    else:
-        print(i)
-
-print(ls)
+for stack in nested_list_reversed:
+    stack = nested_list_reversed.pop()
+    print(stack)

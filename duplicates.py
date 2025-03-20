@@ -41,7 +41,7 @@ print(new_lst)  # Output: [3, 4, 5]
 # Conclusion: The dictionary-based solutions 3 & 4 are much more efficient,
 # reducing time complexity from 𝑂(𝑛2) to 𝑂(𝑛).
 
-# solution 5
+# Wrong solution 5 - will not work for [1, 1, 2, 3, 4, 5, 2]
 a = [1,2,3,4,5,1,2]
 half_len = int(len(a)/2)
 s = set(a[:half_len])
